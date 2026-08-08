@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "踩蘑菇每日签到",
+  "version": "1.0.0",
+  "description": "使用当前 Chrome 登录会话完成踩蘑菇每日签到。",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.caimogu.cc/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "踩蘑菇每日签到"
+  }
+}
